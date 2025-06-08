@@ -1,0 +1,123 @@
+/* Navbar ana stili */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Logo stili */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navbar bölümleri */
+.navbar-left, .navbar-center, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  gap: 20px;
+}
+
+/* Navigasyon linkleri */
+.navbar-link {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #1b5e20;
+}
+
+/* Sepet butonu */
+.sepet-button {
+  display: flex;
+  align-items: center;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  gap: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.sepet-button:hover {
+  background-color: #1b5e20;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sepet-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #e53935;
+  color: white;
+  font-size: 0.7rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+  
+  .navbar {
+    height: auto;
+  }
+  
+  .navbar-center {
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-right {
+    margin-top: 10px;
+  }
+} 
