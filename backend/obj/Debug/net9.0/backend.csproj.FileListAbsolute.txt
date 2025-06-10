@@ -132,3 +132,4 @@ D:\avokadocu-sezgin\backend\obj\Debug\net9.0\refint\backend.dll
 D:\avokadocu-sezgin\backend\obj\Debug\net9.0\backend.pdb
 D:\avokadocu-sezgin\backend\obj\Debug\net9.0\backend.genruntimeconfig.cache
 D:\avokadocu-sezgin\backend\obj\Debug\net9.0\ref\backend.dll
+D:\avokadocu-sezgin\backend\obj\Debug\net9.0\backend.sourcelink.json
